@@ -13,8 +13,10 @@ const Input = styled.TextInput`
     height: 8%;
     width: 65%;
     border-width: 1px;
+    border-color: #a6a6a6;
     padding: 10px;
     font-size: 25px;
+    box-shadow: .5px 2px 2px gray;
   `;
 
 const ButtonsContainers = styled.View`
@@ -37,7 +39,7 @@ const ClearButton = styled.TouchableOpacity`
   height: 50px;
   padding: 5px;
   margin: 10px;
-  background-color: ${colores.red};
+  background-color: ${colores.secundary};
   width:30%;
   align-items: center;
 `;
@@ -48,10 +50,10 @@ const ButtonText = styled.Text`
 `;
 
 export {
-    Input,
-    ButtonsContainers,
-    AddButton,
-    ClearButton,
-    ButtonText,
-    Container
+  Input,
+  ButtonsContainers,
+  AddButton,
+  ClearButton,
+  ButtonText,
+  Container
 }

@@ -11,11 +11,10 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
 
-
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    console.log(products)
+
   }, [products])
 
   return (
@@ -51,20 +50,57 @@ export default function App() {
 
             return <Ionicons name={iconName} size={size} color={color} />;
           },
-          tabBarActiveTintColor: colores.primary,
           tabBarInactiveTintColor: "grey",
+          tabBarLabelStyle: { fontWeight: 'bold', textShadowColor: 'white' }
         })}
       >
 
-        <Tab.Screen name="Counter" component={AutoCounter} />
-        <Tab.Screen name="AddProduct" component={AddProduct} initialParams={{ setProducts }} />
+        <Tab.Screen
+          name="Counter"
+          component={AutoCounter}
+          options={{
+            title: 'Counter',
+            headerStyle: {
+              backgroundColor: colores.secundary,
+            },
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+            tabBarActiveTintColor: colores.secundary
+          }}
+        />
+        <Tab.Screen
+          name="AddProduct"
+          component={AddProduct}
+          initialParams={{ setProducts }}
+          options={{
+            title: 'Add Products',
+            headerStyle: {
+              backgroundColor: colores.primary
+            },
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+            tabBarActiveTintColor: colores.primary
+          }}
+        />
 
-        <Tab.Screen name="Products" >
+
+        <Tab.Screen name="Products" options={{
+          title: 'Products',
+          headerStyle: {
+            backgroundColor: colores.extra
+          },
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          tabBarActiveTintColor: colores.extra
+        }}>
           {() => <Products products={products} />}
         </Tab.Screen>
 
       </Tab.Navigator>
 
-    </NavigationContainer>
+    </NavigationContainer >
   );
 }

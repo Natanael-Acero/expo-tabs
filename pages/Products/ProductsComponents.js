@@ -5,6 +5,7 @@ const Container = styled.View`
   flex: 1;
   background-color: ${colores.background};
   align-items: center;
+  font-family: cursive;
 `;
 const ProductName = styled.TouchableOpacity`
   border-radius: 50px;

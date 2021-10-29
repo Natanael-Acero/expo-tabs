@@ -21,7 +21,7 @@ const AddProduct = (props) => {
     setProducts((products) => [
       ...products,
       {
-        id: (Math.floor(Math.random() * 100) + 1).toString(),
+        id: (Math.floor(Math.random() * 10000) + 1).toString(),
         productName: inputValue,
       },
     ]);

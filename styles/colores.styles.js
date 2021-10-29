@@ -1,11 +1,16 @@
 export const colores = {
     // primary: "#84b6f4",
     // red: "#f7cae7",
-    // success: "#95fab9",
-    primary: "#00C1D4",
-    red: "#F8485E",
-    success: "#512D6D",
+    // // success: "#95fab9",
+    // primary: "#00C1D4",
+    // red: "#F8485E",
+    // success: "#512D6D",
+    primary: "#ED3196",
+    secundary: "#F18018",
+    success: "#5D0865",
+    tertiary: "#6A91CF",
+    extra: '#FFA52B',
     background: "#fafafa",
     black_text: "#0a0a0a",
-    white_text: "#ffffff"
+    white_text: "#ffffff",
 };

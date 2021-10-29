@@ -6,6 +6,7 @@ const Container = styled.View`
   background-color: ${colores.background};
   align-items: center;
   justify-content: center;
+  font-family: cursive;
 `;
 
 const Counter = styled.Text`
@@ -34,7 +35,7 @@ const DecreaseButton = styled.TouchableOpacity`
   height: 50px;
   padding: 5px;
   margin: 10px;
-  background-color: ${colores.red};
+  background-color: ${colores.secundary};
   width: 90px;
   align-items: center;
 `;
@@ -76,5 +77,5 @@ export {
   ButtonText,
   NameText,
   InfoText,
-  GenericButton,
+  GenericButton
 };

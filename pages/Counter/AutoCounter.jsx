@@ -58,7 +58,9 @@ const AutoCounter = () => {
   return (
     <>
       <Container>
+
         <Counter ref={counterRef}>{counter}</Counter>
+
         {showAuthor == true ? (
           <NameText>Natanael Acero</NameText>
         ) : (
@@ -66,6 +68,7 @@ const AutoCounter = () => {
             *Press "Show Author" to show Author's name for 5 seconds.*
           </InfoText>
         )}
+        
       </Container>
 
       <Container>
@@ -86,6 +89,7 @@ const AutoCounter = () => {
           <ButtonText>Show Author</ButtonText>
         </GenericButton>
         <StatusBar style="auto" />
+        
       </Container>
     </>
   );
